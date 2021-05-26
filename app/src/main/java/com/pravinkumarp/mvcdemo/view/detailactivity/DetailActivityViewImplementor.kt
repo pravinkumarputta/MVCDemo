@@ -15,7 +15,7 @@ import com.pravinkumarp.mvcdemo.model.MainModelImplementor
 import com.pravinkumarp.mvcdemo.model.bean.Fruit
 import com.pravinkumarp.mvcdemo.view.MainView
 
-class DetailActivityViewImplementor(private val context: Context, private val fruitId: Int, private val viewGroup: ViewGroup?) : MainView, DetailActivityView {
+class DetailActivityViewImplementor(private val context: Context, private val fruitId: Int, private val viewGroup: ViewGroup?) : DetailActivityView {
     private val rootView: View = LayoutInflater.from(context).inflate(R.layout.activity_detail, viewGroup)
 
     private var mainModelImplementor: MainModelImplementor = MainModelImplementor(MainApplication.getDBHelper())
